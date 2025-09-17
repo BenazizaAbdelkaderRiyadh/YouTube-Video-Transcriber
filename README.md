@@ -32,6 +32,7 @@ A web app that takes a YouTube video link, downloads the audio, transcribes it i
 ---
 
 ## 📂 Project Structure
+```sh
 │
 ├── backend/
 │ ├── app.py 
@@ -54,13 +55,13 @@ A web app that takes a YouTube video link, downloads the audio, transcribes it i
 │   └── package.json    # Project dependencies and scripts
 ├── README.md            # This file
 └── requirements.txt 
-
+```
 ### Installation
 
 ##  Clone the repository:
-    ```sh
+  ```sh
     git clone https://github.com/BenazizaAbdelkaderRiyadh/YouTube-Video-Transcriber.git
-    ```
+  ```
 
 ## Setup Backend (Flask)
 ```sh

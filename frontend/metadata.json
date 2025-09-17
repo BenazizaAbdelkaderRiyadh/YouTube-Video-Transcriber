@@ -1,0 +1,5 @@
+{
+  "name": "YouTube Video Transcriber",
+  "description": "A web application that takes a YouTube video URL, downloads the audio, transcribes it using AI, and allows you to download the transcript as a PDF or DOCX file.",
+  "requestFramePermissions": []
+}

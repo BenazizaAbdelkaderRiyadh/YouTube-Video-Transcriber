@@ -41,19 +41,19 @@ A web app that takes a YouTube video link, downloads the audio, transcribes it i
 │ └── exporter.py 
 │ 
 ├── frontend/
-│   ├── components/      # Reusable React components
+│   ├── components/      
 │   │   ├── ErrorMessage.tsx
 │   │   ├── Header.tsx
 │   │   ├── LoadingSpinner.tsx
 │   │   ├── TranscriptOutput.tsx
 │   │   └── URLInputForm.tsx
-│   ├── App.tsx          # Main application component and state management
-│   ├── index.tsx        # Application entry point
-│   ├── constants.ts     # Global constants (e.g., API URL)
-│   └── types.ts         # TypeScript type definitions
-│   ├── index.html       # Main HTML file
-│   └── package.json    # Project dependencies and scripts
-├── README.md            # This file
+│   ├── App.tsx          
+│   ├── index.tsx        
+│   ├── constants.ts     
+│   └── types.ts         
+│   ├── index.html       
+│   └── package.json    
+├── README.md            
 └── requirements.txt 
 ```
 ### Installation

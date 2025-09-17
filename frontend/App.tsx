@@ -37,21 +37,18 @@ const App: React.FC = () => {
   useEffect(() => {
     let timer: number | undefined;
     if (status === 'loading') {
-      // Start a timer to simulate progress
       timer = window.setInterval(() => {
         setProgress(prev => {
           if (prev >= 95) {
             if (timer) clearInterval(timer);
             return 95;
           }
-          // Increment progress non-linearly
           const increment = Math.random() * 5;
           return Math.min(prev + increment, 95);
         });
       }, 500);
     }
     
-    // Cleanup function to clear the interval
     return () => {
       if (timer) clearInterval(timer);
     };
@@ -99,7 +96,7 @@ const App: React.FC = () => {
       setTimeout(() => {
           setTranscript(data.transcript);
           setStatus('success');
-      }, 500); // Wait for progress bar animation
+      }, 500); 
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'An unexpected error occurred.';
       let detailedError = `Transcription failed: ${errorMessage}`;
@@ -115,7 +112,7 @@ const App: React.FC = () => {
       setTimeout(() => {
         setError(detailedError);
         setStatus('error');
-      }, 500); // Wait for progress bar animation
+      }, 500); 
     }
   }, [url, backendStatus]);
 
